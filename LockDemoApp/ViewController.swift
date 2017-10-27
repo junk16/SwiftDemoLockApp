@@ -28,8 +28,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func authroze(_ sender: UIButton) {
-        let dialog = UIAlertController(title: "test", message: "demo", preferredStyle: UIAlertControllerStyle.alert)
-        let button = UIAlertAction(title: password.text
+        let dialog = UIAlertController(title: "test", message: password.text,
+                                       preferredStyle: UIAlertControllerStyle.alert)
+        let button = UIAlertAction(title: "OK"
             , style: UIAlertActionStyle.cancel, handler: nil)
         
         dialog.addAction(button)
